@@ -1,4 +1,4 @@
-name: Upload Website
+name: Upload Website to S3 bucket
 
 on:
   push:
@@ -20,8 +20,5 @@ jobs:
         AWS_REGION: 'us-west-1'   # optional: defaults to us-east-1
         SOURCE_DIR: 'public'      # optional: defaults to entire repository
         
-  # You may pin to the exact commit or the version.
-  # uses: jakejarvis/s3-sync-action@be0c4ab89158cac4278689ebedd8407dd5f35a83
-  uses: jakejarvis/s3-sync-action@v0.5.1
-
+           
           
